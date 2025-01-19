@@ -97,3 +97,128 @@
 #     print("not a palindrome")
 
 #Q7.1
+# f=open("def.txt","w+")
+# st="good morning"
+# f.write(st)
+# f.seek(0)
+# data=f.read()
+# print(data)
+
+#Q7.2
+# f=open("def.txt","a")
+# a=" how are you? "
+# f.write(a)
+# f.close()
+# f=open("def.txt","r")
+# data=f.read()
+# print(data)
+
+#Q7.3
+# f=open("def.txt","r")
+# print(f"The number of lines in the file is: {len(f.readlines())}")
+# f.close()
+
+#Q8.1
+# a=int(input("enter numerator: "))
+# b=int(input("enter denominator: "))
+# try:
+#     if(b==0):
+#         raise
+#     else:
+#         print(a/b)
+# except:
+#     print("cant divide by zero")
+
+#Q8.2
+# try:
+#     x=int(input("enter the number: "))
+#     print(x+3)
+#     print("valid")
+# except:
+#     print("enter a number please")
+
+#Q8.3
+# x=int(input("enter a number to divide 20: "))
+# try:
+#     print(20/x)
+# except:
+#     print("cant divide by zero")
+# finally:
+#     print("done")
+
+#Q9.1
+# import random
+# l=[]
+# for i in range(5):
+#     x=random.randint(1,100)
+#     l.append(x)
+# print(l)
+
+#Q9.2
+# import random
+# x=random.randint(1,100)
+# print(x)
+# p=False
+# for i in range(2,int(x/2)+1):
+#     if(x%i==0):
+#         print("not prime")
+#         p=True
+#         break
+#     else:
+#         p=False
+# if(p==False):
+#     print("number is prime")
+
+#Q9.3
+# import random
+# x=random.randint(1,6)
+# ch=int(input(("enter 1 to roll the die: ")))
+# if(ch==1):
+#     print(x)
+
+#Q9.4
+# import random
+# l=[1,2,3,4,5]
+# random.shuffle(l)
+# print(l)
+
+#Q9.5
+# import random
+# a=[1,"abc",2.34,5,67]
+# q=random.choice(a)
+# print(q)
+
+#Q9.6
+# import random
+# pas=["1","2","3","4","5","6","7","8","9","0"]
+# password=""
+# x=int(input("enter the length of the password that you want: "))
+# for i in range(x):
+#     a=random.choice(pas)
+#     password+=a
+# print(f"the generated password is: {password}")
+
+#Q9.7
+# import random
+# s=["diamonds","spades","hearts","clubs"]
+# x=[2,3,4,5,6,7,8,9,10,"king","queen","jack","ace"]
+# a=random.choice(s)
+# b=random.choice(x)
+# print(f"you got {b} of {a}")
+
+#Q11.1
+# import math
+# x=int(input("enter the number whose square root to be found: "))
+# print(math.pow(x,1/2))
+
+#Q11.2
+# from datetime import datetime
+# a=datetime.now()
+# date=a.strftime("%d/%m/%Y")
+# time=a.strftime("%H:%M:%S")
+# print("current date:",date)
+# print("current time:",time)
+
+#Q11.3
+# import os
+# print(os.listdir())
